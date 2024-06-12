@@ -20,14 +20,17 @@
         <main>
             <div>
             <!--formulario p/ cadastro de pessoas-->
-            <form action="">
+            <form action="" id="idFormCad">
                 <div class="clsEntradasForm">
-                    <input type="text" id="idNome" placeholder="Digite seu nome">
-                    <input type="tel" id="idContato" placeholder="Digite seu contato">
+                    <input type="text" id="idNome" placeholder="Digite seu nome" required>
+                    <input type="tel" id="idContato" placeholder="Digite seu contato" required>
                 </div>
                 <!--botao p/ adicionar na tabela-->
                 <button type="submit" id="idBtnAdc">Adicionar</button>
             </form>
+            <div class="clsValidacao" id="idValidacao">
+                <span></span>
+            </div>
             <!--tabela de cadastros-->
             <table>
                 <!--cabecalho da tabela com uma linha
@@ -38,17 +41,12 @@
                         <th>Telefone</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <!--linhas da tabela: com as informacoes adicinadas-->
-                    <tr>
-                        <td>Fulano</td>
-                        <td>(35) 9 8851-8845</td>
-                    </tr>
-                </tbody>
+                <tbody id="idTabCorpo"></tbody>
                 <tfoot>
                     <!--resumo dos itens-->
                     <tr>
-                        <td>1 pessoa(s) cadastrada(s)</td>
+                        <td>Total: </td>
+                        <td id="idTabResumo"></td>
                     </tr>
                 </tfoot>
             </table>
@@ -56,6 +54,6 @@
         </main>
     </div>
     <!--scripts-->
-    <script src="/fontes/clsComuns.js"></script>
+    <script src="/fontes/clsValIndex.js"></script>
 </body>
 </html>

@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documento</title>
+    <title>Agenda</title>
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--arquivo de estilizacao-->
     <link rel="stylesheet" href="/estilos/indexEstilos.css">
 </head>
@@ -11,14 +15,45 @@
     <!--caebacalho principal-->
     <div class="clsPrincipal">
         <header>
-
+            <h1>Agenda de contatos</h1>
         </header>
         <main>
-
+            <div>
+            <!--formulario p/ cadastro de pessoas-->
+            <form action="">
+                <div class="clsEntradasForm">
+                    <input type="text" id="idNome" placeholder="Digite seu nome">
+                    <input type="tel" id="idContato" placeholder="Digite seu contato">
+                </div>
+                <!--botao p/ adicionar na tabela-->
+                <button type="submit" id="idBtnAdc">Adicionar</button>
+            </form>
+            <!--tabela de cadastros-->
+            <table>
+                <!--cabecalho da tabela com uma linha
+                    2 colunas : nome, contato-->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--linhas da tabela: com as informacoes adicinadas-->
+                    <tr>
+                        <td>Fulano</td>
+                        <td>(35) 9 8851-8845</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <!--resumo dos itens-->
+                    <tr>
+                        <td>1 pessoa(s) cadastrada(s)</td>
+                    </tr>
+                </tfoot>
+            </table>
+            </div>
         </main>
-        <footer>
-            
-        </footer>
     </div>
     <!--scripts-->
     <script src="/fontes/clsComuns.js"></script>

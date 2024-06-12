@@ -3,4 +3,101 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* fundo  */
+    background-color: #f0f8ff;
+}
+
+/* elementos: pais  */
+main{
+    height: 660px;
+    width: 100%;
+}
+
+table
+,form{
+    width: 100%;
+}
+
+/* elementos filhos diretos: pais  */
+main > div{
+    /*posicao*/
+    position: relative;
+    top: 40%;
+    left: 25%;
+    width: 60%;
+}
+
+/*classes: pais*/
+.clsPrincipal{
+    /*margens padrao*/
+    max-width: 1366px;
+    width: 100%;
+    max-height: 720px;
+    height: 100%;
+    margin: 0 auto 0 auto;
+    /*aparencia dos objetos*/
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*elementos de classes: pais */
+.clsEntradasForm input{
+    font-size: 18px;
+    margin-left: 10px;
+    height: 30px;
+    width: 300px;
+    /* bordas  */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+form button{
+    font-size: 18px;
+    /* margens  */
+    margin-right: 10px;
+    width: 20%;
+    height: 30px;
+    /* arrendonda bordas  */
+    border-radius: 5px;
+    /* cores  */
+    background-color: burlywood;
+}
+
+/* filhos diretos de classes: pais */
+.clsPrincipal > header{
+    /* define exibicao p/ ser flex  */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* alinha objeto ao centro da + aplica espacamento entre itens  */
+    align-items: center;
+    justify-content: space-between;
+    /* margens  */
+    padding: 10px 10px;
+    margin: 10px auto;
+    /* bordas arredondadas  */
+    border-radius: 10px;
+    /* fundo  */
+    background-color: #daecfcf9;
+    /* faz cabecalho ocupar toda area da tela  */
+    width: 100%;
+}
+
+.clsPrincipal > header > h1{
+    /*fonte*/
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+    /* fundo  */
+    background-color: #daecfcf9;
+}
+
+/*mistos: classes + elementos : pais*/
+form
+,.clsEntradasForm{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }

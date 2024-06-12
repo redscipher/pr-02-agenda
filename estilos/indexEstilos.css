@@ -74,8 +74,6 @@ main > div{
     /*margens padrao*/
     max-width: 1366px;
     width: 100%;
-    max-height: 720px;
-    height: 100%;
     margin: 0 auto 0 auto;
     /*aparencia dos objetos*/
     display: block;
@@ -126,6 +124,7 @@ form button{
     font-size: 18px;
     /* margens  */
     margin-right: 10px;
+    margin-left: 10px;
     width: 20%;
     height: 30px;
     /* arrendonda bordas  */
